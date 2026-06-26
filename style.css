@@ -1,0 +1,210 @@
+:root {
+    --sirocco-gold: #c4a664; 
+    --dune-shadow: #b39452;
+    --sand-light: #f4ece1;
+    --clay-dark: #4a4031;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--sand-light);
+    font-family: 'Quicksand', sans-serif;
+    color: var(--clay-dark);
+    overflow-x: hidden;
+    padding-top: 50px; 
+}
+
+.navbar-custom {
+    background-color: rgba(244, 236, 225, 0.85);
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid var(--sirocco-gold);
+    padding: 1rem 2rem;
+    z-index: 1030; 
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    letter-spacing: 5px;
+    color: var(--sirocco-gold) !important;
+}
+
+.nav-link {
+    color: #7a6a4d !important;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.4s;
+}
+
+.nav-link:hover {
+    color: var(--sirocco-gold) !important;
+    text-shadow: 0 0 10px rgba(196, 166, 100, 0.3);
+}
+
+.toggler-icon {
+    display: inline-block;
+    width: 25px;
+    height: 2px;
+    background-color: var(--sirocco-gold);
+    position: relative;
+}
+
+.toggler-icon::before, .toggler-icon::after {
+    content: '';
+    width: 25px;
+    height: 2px;
+    background-color: var(--sirocco-gold);
+    position: absolute;
+    left: 0;
+}
+
+.toggler-icon::before { top: -8px; }
+.toggler-icon::after { top: 8px; }
+
+.carousel-caption-bg {
+    background: rgba(43, 36, 26, 0.65); 
+    padding: 20px; 
+    border-radius: 4px;
+    border-bottom: 3px solid var(--sirocco-gold);
+}
+
+.carousel-caption-bg h5 {
+    font-family: 'Playfair Display', serif; 
+    color: var(--sirocco-gold); 
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+}
+
+.carousel-caption-bg p {
+    font-weight: 300;
+    font-size: 0.95rem;
+}
+
+.desert-frame {
+    padding-top: 40px; 
+}
+
+.mirage-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
+    color: var(--sirocco-gold);
+    opacity: 0.8;
+    margin-bottom: 0;
+    letter-spacing: 4px;
+}
+
+.subtitle {
+    font-style: italic;
+    letter-spacing: 3px;
+    color: var(--dune-shadow);
+}
+
+.sand-card {
+    background: white;
+    padding: 2.5rem;
+    margin-top: 2rem;
+    box-shadow: 15px 15px 40px #d9d0c3, -15px -15px 40px #ffffff;
+    border-radius: 2px;
+    position: relative;
+    border-left: 4px solid var(--sirocco-gold);
+    height: 100%;
+    transition: 0.4s ease-in-out;
+}
+
+.sand-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 20px 20px 50px #cdbfad;
+}
+
+.sand-card h3, .sand-card h2 {
+    font-family: 'Playfair Display', serif;
+    color: var(--sirocco-gold);
+    margin-bottom: 1.2rem;
+    font-weight: 400;
+}
+
+.sand-card p {
+    line-height: 1.8;
+    font-weight: 300;
+    font-size: 0.95rem;
+    text-align: justify;
+}
+
+.fauna-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 2px solid var(--sand-light);
+}
+
+.decorative-line {
+    width: 50px;
+    height: 1px;
+    background: var(--sirocco-gold);
+    margin: 1.5rem 0;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    color: var(--sirocco-gold);
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.title-divider {
+    width: 60px;
+    height: 2px;
+    background-color: var(--sirocco-gold);
+    margin: 1rem auto 3rem auto;
+}
+
+.desert-footer {
+    background-color: #2b241a !important; 
+    color: #d1c7b7;
+    font-weight: 300;
+    border-top: 3px solid var(--sirocco-gold);
+}
+
+.desert-footer h4 {
+    font-family: 'Playfair Display', serif;
+    color: var(--sirocco-gold);
+    letter-spacing: 3px;
+}
+
+.embed-responsive {
+    border: 1px solid var(--sirocco-gold);
+    filter: sepia(0.4) contrast(0.9) brightness(0.95); 
+    border-radius: 2px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.btn-top {
+    position: fixed;
+    bottom: 30px;
+    right: 25px;
+    width: 50px; 
+    height: 50px;
+    line-height: 42px; 
+    padding-bottom: 3px;
+    background-color: rgba(74, 64, 49, 0.85); 
+    color: var(--sirocco-gold); 
+    text-align: center;
+    text-decoration: none !important;
+    border-radius: 50%; 
+    border: 1px solid var(--sirocco-gold);
+    font-size: 1.2rem;
+    z-index: 1040; 
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-top:hover {
+    background-color: var(--sirocco-gold);
+    color: white;
+    transform: translateY(-4px); 
+    box-shadow: 0 6px 20px rgba(196, 166, 100, 0.5);
+}
